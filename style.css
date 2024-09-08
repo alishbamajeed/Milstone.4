@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #c9eaf3, #b0ffb6);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Main Container */
+  .main-container {
+    max-width: 1200px;
+    width: 100%;
+    background: #79a3b4;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3d3a;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  /* Form Section */
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 4px solid #34b4a1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #34b4a1;
+    box-shadow: 0 5px 15px rgba(52, 180, 161, 0.2);
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    background: linear-gradient(135deg, #34b4a1, #2e8b57);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(46, 139, 87, 0.3);
+  }
+  
+  /* Resume Display */
+  .resume {
+    display: none;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #acd1d3;
+    border-radius: 15px;
+    border: 4px solid #34b4a1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+  }
+  
+  .resume.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2e8b57;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .editable {
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px dashed #34b4a1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .editable:hover {
+    background-color: #e6fff0;
+    border-bottom: 2px solid #34b4a1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    input, textarea {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    button {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    input, textarea {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  }
+  
